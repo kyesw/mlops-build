@@ -12,7 +12,6 @@ phases:
       - export PYTHONUNBUFFERED=TRUE
       - export SAGEMAKER_PROJECT_NAME_ID="${SAGEMAKER_PROJECT_NAME}-${SAGEMAKER_PROJECT_ID}"
       - pwd
-      - ls
       - |
         run-pipeline --module-name pipelines.customer_churn.pipeline \
           --role-arn $SAGEMAKER_PIPELINE_ROLE_ARN \
